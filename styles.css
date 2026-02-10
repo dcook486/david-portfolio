@@ -278,11 +278,12 @@ body {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 60px;
-    align-items: start;
     margin-top: 48px;
+}
+
+.about-text-full {
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .about-text p {
