@@ -8,172 +8,231 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Gradient orbs (background decoration) -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">DC</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="logo-mark">D</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact" class="nav-cta">Get in touch</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span>
             </button>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">Hey, I'm</p>
-                <h1 class="hero-name">David Cook</h1>
-                <p class="hero-tagline">I like building things.</p>
-                <p class="hero-description">Product Owner by day, tinkerer by night. I'm into AI, basketball, and making stuff that people can actually use. This is where I share what I'm working on.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">See What I'm Building</a>
-                    <a href="#about" class="btn btn-secondary">A Bit About Me</a>
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge reveal">
+                        <span class="badge-dot"></span>
+                        Building things in Omaha
+                    </div>
+                    <h1 class="hero-title reveal" data-delay="80">
+                        David Cook
+                    </h1>
+                    <p class="hero-sub reveal" data-delay="160">
+                        Product Owner by day. Builder of side projects, NBA trivia games, and consulting tools by&nbsp;night.
+                    </p>
+                    <div class="hero-actions reveal" data-delay="240">
+                        <a href="#projects" class="btn btn-primary">See my work</a>
+                        <a href="#about" class="btn btn-ghost">About me</a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="headshot.jpg" alt="David Cook" class="headshot-img">
+                <div class="hero-visual reveal" data-delay="200">
+                    <div class="hero-card">
+                        <img src="headshot.jpg" alt="David Cook" class="hero-headshot">
+                        <div class="hero-card-info">
+                            <span class="hero-card-name">David Cook</span>
+                            <span class="hero-card-role">Product Owner · Builder</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text about-text-full">
-                    <p>I'm David — a Product Owner based in Omaha, NE. I have an MBA and work in enterprise tech during the day, but outside of that I spend a lot of time building side projects and learning new things.</p>
-                    <p>Lately I've been deep in AI, web development, and figuring out how to turn ideas into things people can actually use. I'm not an expert in everything, but I'm curious about a lot and I like getting my hands dirty.</p>
-                    <p>When I'm not at a keyboard I'm probably watching basketball, playing with my dog, or trying to convince myself that my fantasy lineup is fine.</p>
+            <div class="section-eyebrow reveal">About</div>
+            <div class="about-grid">
+                <div class="about-main reveal" data-delay="80">
+                    <h2 class="section-heading">I like figuring things out and making stuff people can use.</h2>
+                </div>
+                <div class="about-detail reveal" data-delay="160">
+                    <p>I'm a Product Owner based in Omaha, NE. I have an MBA and work in enterprise tech during the day, but outside of that I spend most of my time building side projects and learning new things.</p>
+                    <p>Lately I've been deep in AI, web development, and figuring out how to turn ideas into things people actually enjoy using. I'm not an expert in everything, but I'm curious about a lot and I like getting my hands dirty.</p>
+                    <p>When I'm not at a keyboard I'm probably watching basketball, playing with my dog, or overthinking my fantasy lineup.</p>
+                </div>
+            </div>
+            <div class="about-traits">
+                <div class="trait-card reveal" data-delay="0">
+                    <div class="trait-number">01</div>
+                    <h3 class="trait-title">Curious</h3>
+                    <p class="trait-desc">I like learning how things work — then trying to build them myself.</p>
+                </div>
+                <div class="trait-card reveal" data-delay="80">
+                    <div class="trait-number">02</div>
+                    <h3 class="trait-title">Practical</h3>
+                    <p class="trait-desc">I'd rather ship something useful than tinker with something perfect.</p>
+                </div>
+                <div class="trait-card reveal" data-delay="160">
+                    <div class="trait-number">03</div>
+                    <h3 class="trait-title">Honest</h3>
+                    <p class="trait-desc">I'll tell you what I know and what I don't. No hand-waving.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="projects">
+    <section class="projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <p class="section-subtitle">Things I've built or am building. Some polished, some still in progress.</p>
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-badge">Featured</div>
-                    <div class="project-icon">🏀</div>
-                    <h3>KnowBall</h3>
-                    <p>An NBA player guessing game. You get progressive clues and try to figure out who the player is. Daily challenges, leaderboards, play with friends. Built because I'm an NBA nerd and I wanted a game I'd actually play every day.</p>
-                    <div class="project-tags">
-                        <span class="tag">NBA</span>
-                        <span class="tag">Game</span>
-                        <span class="tag">Daily Challenge</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://playknowball.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Play KnowBall →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">💼</div>
-                    <h3>Cook Systems Consulting</h3>
-                    <p>My consulting business helping small businesses figure out AI and automation. Built the website, the brand, and I'm growing it on the side.</p>
-                    <div class="project-tags">
-                        <span class="tag">Business</span>
-                        <span class="tag">AI</span>
-                        <span class="tag">Consulting</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://cooksystemsconsulting.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Visit Site →</a>
-                    </div>
-                </div>
+            <div class="section-eyebrow reveal">Projects</div>
+            <h2 class="section-heading reveal" data-delay="80">Things I've built or am building.</h2>
 
+            <!-- Featured: KnowBall -->
+            <div class="project-featured reveal" data-delay="160">
+                <div class="project-featured-content">
+                    <div class="project-label">Featured Project</div>
+                    <h3 class="project-title">KnowBall</h3>
+                    <p class="project-desc">An NBA player guessing game with daily challenges. You get progressive clues — career stats, teams, accolades — and try to figure out who the player is. Leaderboards, friends, streaks. Built because I'm an NBA nerd and I wanted a game I'd actually play every day.</p>
+                    <div class="project-meta">
+                        <span class="meta-tag">NBA</span>
+                        <span class="meta-tag">Daily Game</span>
+                        <span class="meta-tag">Leaderboards</span>
+                    </div>
+                    <a href="https://playknowball.com" target="_blank" rel="noopener" class="btn btn-primary">Play KnowBall <span class="btn-arrow">→</span></a>
+                </div>
+                <div class="project-featured-visual">
+                    <div class="knowball-graphic">
+                        <div class="kb-ring kb-ring-1"></div>
+                        <div class="kb-ring kb-ring-2"></div>
+                        <div class="kb-ring kb-ring-3"></div>
+                        <div class="kb-emoji">🏀</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other project -->
+            <div class="project-grid">
+                <div class="project-card reveal" data-delay="0">
+                    <div class="project-card-top">
+                        <span class="project-card-icon">💼</span>
+                        <a href="https://cooksystemsconsulting.com" target="_blank" rel="noopener" class="project-card-link">↗</a>
+                    </div>
+                    <h3 class="project-card-title">Cook Systems Consulting</h3>
+                    <p class="project-card-desc">My consulting business helping small businesses figure out AI and automation. Built the brand and the website from scratch.</p>
+                    <div class="project-meta">
+                        <span class="meta-tag">Business</span>
+                        <span class="meta-tag">AI</span>
+                        <span class="meta-tag">Consulting</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Blog -->
-    <section id="blog" class="blog">
+    <section class="blog" id="blog">
         <div class="container">
-            <h2 class="section-title">Blog</h2>
-            <p class="section-subtitle">Coming soon. I want to start writing about what I'm learning — AI, building products, small business, and whatever else is on my mind.</p>
-            <div class="blog-placeholder">
-                <div class="blog-placeholder-icon">✍️</div>
-                <p>Nothing here yet, but stay tuned.</p>
+            <div class="section-eyebrow reveal">Blog</div>
+            <h2 class="section-heading reveal" data-delay="80">Writing — coming soon.</h2>
+            <div class="blog-preview reveal" data-delay="160">
+                <div class="blog-preview-inner">
+                    <div class="blog-preview-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"/>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                        </svg>
+                    </div>
+                    <p class="blog-preview-text">I want to start writing about what I'm learning — AI, building products, small business, basketball, whatever's on my mind. Stay tuned.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Say Hi</h2>
-            <p class="section-subtitle">I'm always happy to chat — about a project, an idea, or just basketball.</p>
-            <div class="contact-links">
-                <a href="mailto:davidandcook@gmail.com" class="contact-card">
-                    <span class="contact-icon">📧</span>
-                    <span class="contact-label">Email</span>
-                    <span class="contact-value">davidandcook@gmail.com</span>
+            <div class="contact-block reveal">
+                <div class="section-eyebrow">Contact</div>
+                <h2 class="contact-heading">Let's talk.</h2>
+                <p class="contact-sub">Whether it's about a project, an idea, or just basketball — I'm always happy to chat.</p>
+                <a href="mailto:davidandcook@gmail.com" class="btn btn-primary btn-lg">
+                    davidandcook@gmail.com
+                    <span class="btn-arrow">→</span>
                 </a>
-
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 David Cook. Built with curiosity and a free elf. 🧦</p>
+        <div class="container footer-inner">
+            <span class="footer-logo">D</span>
+            <p class="footer-copy">&copy; 2026 David Cook. Built with curiosity and a free elf. 🧦</p>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-                // Close mobile menu
-                document.querySelector('.nav-links').classList.remove('active');
-                document.querySelector('.nav-toggle').classList.remove('active');
-            });
-        });
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // Mobile menu toggle
-        document.querySelector('.nav-toggle').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-            document.querySelector('.nav-toggle').classList.toggle('active');
-        });
-
-        // Scroll animations
-        const observer = new IntersectionObserver((entries) => {
+        // Reveal on scroll
+        const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    const delay = entry.target.dataset.delay || 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('revealed');
+                    }, parseInt(delay));
+                    revealObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
-        document.querySelectorAll('.project-card, .about-text, .contact-card, .blog-placeholder').forEach(el => {
-            el.classList.add('fade-in');
-            observer.observe(el);
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Navbar
+        const nav = document.querySelector('.nav');
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const y = window.scrollY;
+            nav.classList.toggle('nav-scrolled', y > 60);
+            nav.classList.toggle('nav-hidden', y > lastScroll && y > 400);
+            lastScroll = y;
+        });
+
+        // Mobile menu
+        const toggle = document.getElementById('navToggle');
+        const links = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            links.classList.toggle('open');
+        });
+
+        // Smooth scroll & close menu
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                toggle.classList.remove('active');
+                links.classList.remove('open');
+            });
         });
     </script>
 </body>
